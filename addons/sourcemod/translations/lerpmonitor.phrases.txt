@@ -1,0 +1,37 @@
+"Phrases"
+{
+    "TAG"
+    {
+        "en"			"<{green}Lerp Monitor{default}> "
+    }
+
+    "INVALID_LERP"
+    {
+        "#format"		"{1:.01f},{2:.01f},{3:.01f}"
+        "en"			"Illegal lerp value: {blue}{1} {green}({default}Min: {blue}{2}{default}, Max: {blue}{3}{green})"
+    }
+
+    "BACK_TO_LAST_LERP"
+    {
+        "#format"		"{1:.01f},{2:.01f}"
+        "en"			"Illegal lerp change: {blue}{1}{default}. Set previous value at {blue}{2}{default} to play!"
+    }
+
+    "MOVE_TO_SPEC"
+    {
+        "#format"		"{1:N},{2:.01f}"
+        "en"			"Player {teamcolor}{1}{default} was moved to Spectators for lerp {green}{2}{default}!"
+    }
+
+    "LERP_CHANGED"
+    {
+        "#format"		"{1:N},{2:.01f},{3:.01f}"
+        "en"			"Player {teamcolor}{1}{default}'s lerp changed from {olive}{2}{default} to {olive}{3}"
+    }
+
+    "LERP_CHANGED_WITH_LIMIT"
+    {
+        "#format"		"{1:N},{2:.01f},{3:.01f},{4:d},{5:d}"
+        "en"			"Player {teamcolor}{1}{default}'s lerp changed from {olive}{2}{default} to {olive}{3} {green}[{olive}{4}{default}/{olive}{5}{green}]"
+    }
+}
