@@ -13,8 +13,8 @@
 
     "BACK_TO_LAST_LERP"
     {
-        "#format"		"{1:.01f},{2:.01f}"
-        "ru"			"Некорректный lerp: {blue}{1}{default}. Доступное значение {blue}{2}{default}!"
+        "#format"		"{1:d},{2:d},{3:.01f}"
+        "ru"			"Превышен лимит по смене lerp: {olive}{1}{default}/{olive}{2}{default}. Установите предыдущее значение {blue}{3}{default}!"
     }
 
     "MOVE_TO_SPEC"

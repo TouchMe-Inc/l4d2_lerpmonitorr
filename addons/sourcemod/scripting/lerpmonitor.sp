@@ -9,7 +9,7 @@ public Plugin myinfo = {
     name        = "LerpMonitor",
     author      = "ProdigySim, TouchMe",
     description = "Monitors And Tracks Every Player's Lerp",
-    version     = "build_0000",
+    version     = "build_0001",
     url         = "https://github.com/TouchMe-Inc/l4d2_lerpmonitorr"
 };
 
@@ -164,9 +164,10 @@ Action Listener_OnPlayerJoinTeam(int iClient, const char[] sCmd, int iArgs)
         return Plugin_Continue;
     }
 
-    if (lerp.Changes > g_iAllowedLerpChanges && lerp.Value != fClientLerp)
+    int iNewChanges = lerp.Changes + 1;
+    if (iNewChanges > g_iAllowedLerpChanges && lerp.Value != fClientLerp)
     {
-        CPrintToChat(iClient, "%T%T", "TAG", iClient, "BACK_TO_LAST_LERP", iClient, fClientLerp, lerp.Value);
+        CPrintToChat(iClient, "%T%T", "TAG", iClient, "BACK_TO_LAST_LERP", iClient, iNewChanges, g_iAllowedLerpChanges, lerp.Value);
         return Plugin_Handled;
     }
 
@@ -219,7 +220,7 @@ void ProcessClientLerp(int iClient)
     if (iNewChanges > g_iAllowedLerpChanges && lerp.Value != fClientLerp)
     {
         ChangeClientTeam(iClient, TEAM_SPECTATORS);
-        CPrintToChat(iClient, "%T%T", "TAG", iClient, "BACK_TO_LAST_LERP", iClient, fClientLerp, lerp.Value);
+        CPrintToChat(iClient, "%T%T", "TAG", iClient, "BACK_TO_LAST_LERP", iClient, iNewChanges, g_iAllowedLerpChanges, lerp.Value);
         return;
     }
 

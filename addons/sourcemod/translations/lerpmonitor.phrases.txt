@@ -13,8 +13,8 @@
 
     "BACK_TO_LAST_LERP"
     {
-        "#format"		"{1:.01f},{2:.01f}"
-        "en"			"Illegal lerp change: {blue}{1}{default}. Set previous value at {blue}{2}{default} to play!"
+        "#format"		"{1:d},{2:d},{3:.01f}"
+        "en"			"The limit for changing lerp has been exceeded: {olive}{1}{default}/{olive}{2}{default}. Set previous value at {blue}{3}{default}!"
     }
 
     "MOVE_TO_SPEC"
