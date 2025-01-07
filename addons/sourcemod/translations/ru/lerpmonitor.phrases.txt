@@ -32,6 +32,6 @@
     "LERP_CHANGED_WITH_LIMIT"
     {
         "#format"		"{1:N},{2:.01f},{3:.01f},{4:d},{5:d}"
-        "ru"			"Игрок {teamcolor}{1}{default}  сменил lerp с {olive}{2}{default} на {olive}{3} {green}[{olive}{4}{default}/{olive}{5}{green}]"
+        "ru"			"Игрок {teamcolor}{1}{default} сменил lerp с {olive}{2}{default} на {olive}{3} {green}[{olive}{4}{default}/{olive}{5}{green}]"
     }
 }
